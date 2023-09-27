@@ -12,7 +12,8 @@ td{
     background-color: blueviolet;
 }
 h1{
-    color:rgb(0, 0, 0)
+    color:rgb(0, 0, 0);
+    text-align: center;
 }
 {
     margin: 0;
@@ -34,7 +35,7 @@ h1{
     align-items: center;
     flex-wrap: wrap;
     margin: auto;
-    background: #000000;
+    background: #53a000;
     justify-content: space-between;
   }
   nav ul {
