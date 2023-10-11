@@ -1,68 +1,62 @@
-body{
-    background-color:rgb(28, 99, 0)
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
-ul{
-    list-style-type: none;
-}
-<table{
-    background-color: blue;
-}
-td{
-    border-style: solid;
-    background-color: blueviolet;
-}
-h1{
-    color:rgb(0, 0, 0);
-    text-align: center;
-}
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    font-size: 62.5%;
-  }
-  body {
-    font-family: "Goldman", cursive;
-  }
 
-  nav {
-    display: flex;
-    width: 100%;
-    padding: 3rem;
-    min-height: 10vh;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
-    background: #53a000;
-    justify-content: space-between;
-  }
-  nav ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-  }
-  nav li {
-    font-size: 2.5rem;
-    padding: 0 4rem 0 4rem;
-  }
-  nav a {
-    color: green
-    text-decoration: none;
-  }
-  nav img {
-    width: 5vw;
-  }
-  p{
-    color: green
+.navbar {
+  overflow: hidden;
+  background-color: #006400; 
+}
 
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding:32.5px 25px;
+  text-decoration: none;
+}
 
+.subnav {
+  float: left;
+  overflow: hidden;
+}
 
-  }
-  h1{
-    color: rgb(0, 0, 0);
-  }
-  p{
-   text-size-adjust: 80px;
-  }
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: lightgreen;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: lightgreen;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
